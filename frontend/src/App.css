@@ -1,0 +1,45 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
+
+.app { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+h1 { text-align: center; margin-bottom: 24px; color: #1a1a2e; }
+h2 { margin: 24px 0 12px; color: #333; }
+
+.login-box { display: flex; gap: 10px; margin-bottom: 20px; }
+.login-box input {
+  flex: 1; padding: 10px 14px; border: 1px solid #ccc;
+  border-radius: 8px; font-size: 15px;
+}
+.login-box button, button {
+  padding: 10px 20px; background: #4f46e5; color: white;
+  border: none; border-radius: 8px; cursor: pointer; font-size: 14px;
+}
+button:hover { background: #4338ca; }
+button:disabled { background: #aaa; cursor: not-allowed; }
+
+.welcome { margin-bottom: 10px; font-size: 16px; color: #555; }
+.msg {
+  background: #e0f2fe; border-left: 4px solid #0284c7;
+  padding: 10px 14px; border-radius: 6px; margin-bottom: 16px;
+}
+
+.slots-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.slot-card {
+  background: white; border-radius: 12px; padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;
+}
+.slot-card.full { opacity: 0.6; }
+.slot-card h3 { margin-bottom: 8px; font-size: 15px; }
+.slot-card p { margin-bottom: 12px; font-size: 13px; color: #555; }
+
+.my-bookings { margin-top: 30px; }
+.booking-item {
+  display: flex; justify-content: space-between; align-items: center;
+  background: white; padding: 14px 18px; border-radius: 10px;
+  margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.cancel-btn { background: #ef4444; }
+.cancel-btn:hover { background: #dc2626; }
