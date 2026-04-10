@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// GET all slots with current booking count
+// GET all slots with current booking:::
 app.get('/api/slots', (req, res) => {
   const query = `
     SELECT s.id, s.slot_time, s.capacity,
